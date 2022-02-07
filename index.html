@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThreeJS Example</title>
+    <link rel="stylesheet" href="app.css">
+    <!-- <script src="./index.js"></script> -->
+</head>
+<body> 
+    
+    <script src='https://threejs.org/build/three.js'></script>
+
+    <script src='https://cdn.jsdelivr.net/gh/mrdoob/three.js@r92/examples/js/loaders/GLTFLoader.js'></script>
+
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+
+    <script type="module" src="index.js"></script>
+
+    <canvas id="sofa-canvas"></canvas>
+ <div class="options">
+        <div class="option --is-active" data-option="sofa">
+            <img src="./assets/sofa.png" alt="" />
+        </div>
+        <div class="option" data-option="pillows">
+            <img src="./assets/pillows.png" alt="" />
+        </div>
+    </div>
+    
+    <div id="js-tray" class="tray">
+        <div id="js-tray-slide" class="tray__slide"></div>
+    </div>
+    <div class="loading" id="js-loader">
+        <div class="loader"></div>
+    </div>
+  
+</body>
+</html>
